@@ -1,10 +1,10 @@
 import { React } from "react";
 import { connect } from "react-redux";
-import { getDataApi } from "../../redux/reducers/weatherReducer";
+import { getDataApi } from "../../redux/reducers/WeatherReducer";
 import InfoWeather from "./InfoWeather";
 
 const Weather = (props) => {
-
+ 
   return (
     <div className="container-card">
       <InfoWeather dataWeather={props.dataWeather} getDataApi={props.getDataApi} />
@@ -14,7 +14,7 @@ const Weather = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    dataWeather: state.weatherPage.name,
+    dataWeather: state.weatherPage.dataOfWeather,
   };
 };
 

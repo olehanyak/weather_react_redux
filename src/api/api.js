@@ -6,7 +6,6 @@ export const weatherAPI = {
   getDataWeather(nameCity) {
 
     return axios.get(`${baseUrl}q=${nameCity}&appid=442f6e3271a1bc3301208a41a7c40755`)
-      .then(response => response.data);
-  },
+      .then(response => response.data)
+  }
 }
-

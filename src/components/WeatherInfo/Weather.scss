@@ -25,9 +25,14 @@
       font-size: 40px;
       margin-bottom: 20px;
     }
+    &_main {
+      font-size: 20px;
+      font-weight: 300;
+    }
     &_wind {
       font-size: 20px;
       font-weight: 300;
+      text-align: center;
     }
     &_humidity {
       font-size: 20px;

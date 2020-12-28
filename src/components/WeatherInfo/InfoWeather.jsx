@@ -24,6 +24,8 @@ const InfoWeather = memo(({ dataWeather, getDataApi }) => {
               <span className="container-card__content-info_temperature">
                 {Math.round(data.main.temp - 273)} &#8451;
               </span>
+              <span className="container-card__content-info_main">{data.weather[0].main}</span>
+              <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`} alt="Weather icon" />
               <span className="container-card__content-info_wind">wind - {data.wind.speed}m/s</span>
               <span className="container-card__content-info_wind">cloud - {data.weather[0].description}</span>
               <span className="container-card__content-info_humidity">humidity - {data.main.humidity}%</span>
